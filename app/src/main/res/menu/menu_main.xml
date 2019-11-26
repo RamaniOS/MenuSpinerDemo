@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="Add"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_detail"
+        android:title="Detail"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_more"
+        android:title="More">
+        <menu>
+            <item
+                android:id="@+id/action_s1"
+                android:title="SubMenu" />
+
+        </menu>
+    </item>
+</menu>
