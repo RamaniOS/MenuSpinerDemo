@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MenuSpinerDemo</string>
+    <array name="array_countries">
+        <item>India</item>
+        <item>USA</item>
+        <item>Canada</item>
+        <item>Pak</item>
+        <item>China</item>
+    </array>
 </resources>

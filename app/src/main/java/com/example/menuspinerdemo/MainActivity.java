@@ -3,6 +3,7 @@ package com.example.menuspinerdemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             case R.id.action_add:
                 Log.d("", "");
                 System.out.println("ADD...");
+                Intent intent = new Intent(this, SpinerActivity.class);
+                startActivity(intent);
                 break;
             case R.id.action_detail:
                 System.out.println("Detail...");
@@ -71,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         switch (item.getItemId()) {
             case R.id.action_add:
                 System.out.println("ADD...");
+                Intent intent = new Intent(this, SpinerActivity.class);
+                startActivity(intent);
                 break;
             case R.id.action_detail:
                 System.out.println("Detail...");
@@ -90,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         switch (item.getItemId()) {
             case R.id.action_add:
                 System.out.println("ADD...");
+                Intent intent = new Intent(this, SpinerActivity.class);
+                startActivity(intent);
                 break;
             case R.id.action_detail:
                 System.out.println("Detail...");
