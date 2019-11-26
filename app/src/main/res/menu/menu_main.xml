@@ -18,7 +18,6 @@
             <item
                 android:id="@+id/action_s1"
                 android:title="SubMenu" />
-
         </menu>
     </item>
 </menu>

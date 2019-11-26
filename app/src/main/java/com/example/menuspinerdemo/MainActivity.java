@@ -12,10 +12,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
+//import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     private Button btnShow;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +27,18 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         setContentView(R.layout.activity_main);
         btnShow = findViewById(R.id.button_show);
         registerForContextMenu(btnShow);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         btnShow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showMenu(view);
-            }
-        });
-    }
+        @Override
+        public void onClick(View view) {
+            showMenu(view);
+        }
+    });
+}
+
 
     public void showMenu(View v) {
         PopupMenu pop = new PopupMenu(this, v);
