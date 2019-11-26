@@ -32,13 +32,12 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         setSupportActionBar(toolbar);
 
         btnShow.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            showMenu(view);
-        }
-    });
-}
-
+            @Override
+            public void onClick(View view) {
+                showMenu(view);
+            }
+        });
+    }
 
     public void showMenu(View v) {
         PopupMenu pop = new PopupMenu(this, v);
@@ -83,8 +82,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 
